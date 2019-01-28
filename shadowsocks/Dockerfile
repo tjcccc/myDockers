@@ -1,4 +1,4 @@
-FROM debian:9-slim
+FROM debian:stable
 COPY ./entrypoint.sh /entrypoint.sh
 
 RUN apt-get update -y && apt-get install -y git python-pip && apt-get clean
